@@ -11,18 +11,14 @@ This document describes echo-nginx-module [https://github.com/agentzh/echo-nginx
 
 = Synopsis =
 
-<geshi lang="nginx">
   location /hello {
     echo "hello, world!";
   }
-</geshi>
 
-<geshi lang="nginx">
   location /hello {
     echo -n "hello, "
     echo "world!";
   }
-</geshi>
 
 <geshi lang="nginx">
   location /timed_hello {
