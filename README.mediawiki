@@ -15,6 +15,7 @@ This document describes echo-nginx-module [https://github.com/agentzh/echo-nginx
     echo "hello, world!";
   }
 
+
   location /hello {
     echo -n "hello, "
     echo "world!";
