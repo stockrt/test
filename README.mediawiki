@@ -1,8 +1,8 @@
-= get_prev_next_version =
+== get_prev_next_version ==
 
 Get previous or next version number.
 
-== Tests ==
+=== Tests ===
 
 This is just testing madness.
 
@@ -19,13 +19,13 @@ make
 sudo make install
 </code>
 
-== Author ==
+=== Author ===
 
 Rogério Carvalho Schneider <nowiki><stockrt@gmail.com></nowiki>
 
 [http://stockrt.github.com http://stockrt.github.com]
 
-== Contributors ==
+=== Contributors ===
 
 [https://github.com/stockrt/test/contributors People]
 
