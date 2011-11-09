@@ -9,6 +9,22 @@ This is just testing madness.
 Try [http://bmizerany.github.com/roundup roundup] and see what a twisted mind
 one can have by building insane and extensive testing:
 
+ <nowiki>Start with a space in the first column,
+(before the <nowiki>).
+
+Then your block format will be
+    maintained.
+ 
+This is good for copying in code blocks:
+
+def function():
+    """documentation string"""
+
+    if True:
+        print True
+    else:
+        print False</nowiki>
+
 <pre>
 cd /tmp
 rm -rf bmizerany-roundup*
