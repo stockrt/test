@@ -9,14 +9,15 @@ This is just testing madness.
 Try [http://bmizerany.github.com/roundup roundup] and see what a twisted mind
 one can have by building insane and extensive testing:
 
- <nowiki>x
+<pre>
 cd /tmp
 rm -rf bmizerany-roundup*
 curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
 cd bmizerany-roundup*
 ./configure
 make
-sudo make install</nowiki>
+sudo make install
+</pre>
 
 == Author ==
 
