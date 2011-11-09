@@ -9,30 +9,37 @@ This is just testing madness.
 Try [http://bmizerany.github.com/roundup roundup] and see what a twisted mind
 one can have by building insane and extensive testing:
 
- <nowiki>Start with a space in the first column,
-(before the <nowiki>).
+<code>
+    code
+    cd /tmp
+    rm -rf bmizerany-roundup*
+    curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+    cd bmizerany-roundup*
+    ./configure
+    make
+    sudo make install
+</code>
 
-Then your block format will be
-    maintained.
- 
-This is good for copying in code blocks:
-
-def function():
-    """documentation string"""
-
-    if True:
-        print True
-    else:
-        print False</nowiki>
+<nowiki>
+    nowki
+    cd /tmp
+    rm -rf bmizerany-roundup*
+    curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+    cd bmizerany-roundup*
+    ./configure
+    make
+    sudo make install
+</nowiki>
 
 <pre>
-cd /tmp
-rm -rf bmizerany-roundup*
-curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
-cd bmizerany-roundup*
-./configure
-make
-sudo make install
+    pre
+    cd /tmp
+    rm -rf bmizerany-roundup*
+    curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+    cd bmizerany-roundup*
+    ./configure
+    make
+    sudo make install
 </pre>
 
 == Author ==
