@@ -16,8 +16,7 @@ curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
 cd bmizerany-roundup*
 ./configure
 make
-sudo make install
-</nowiki>
+sudo make install</nowiki>
 
 == Author ==
 
