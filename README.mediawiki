@@ -42,6 +42,17 @@ one can have by building insane and extensive testing:
     sudo make install
 </pre>
 
+<tt>
+    tt
+    cd /tmp
+    rm -rf bmizerany-roundup*
+    curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+    cd bmizerany-roundup*
+    ./configure
+    make
+    sudo make install
+</tt>
+
     4 spaces
     cd /tmp
     rm -rf bmizerany-roundup*
