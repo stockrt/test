@@ -53,6 +53,8 @@ one can have by building insane and extensive testing:
     sudo make install
 </tt>
 
+x
+
     4 spaces
     cd /tmp
     rm -rf bmizerany-roundup*
@@ -62,6 +64,8 @@ one can have by building insane and extensive testing:
     make
     sudo make install
 
+x
+
  1 space
  cd /tmp
  rm -rf bmizerany-roundup*
@@ -70,6 +74,8 @@ one can have by building insane and extensive testing:
  ./configure
  make
  sudo make install
+
+x
 
 == Author ==
 
