@@ -31,8 +31,8 @@ one can have by building insane and extensive testing:
     sudo make install
 </nowiki>
 
-<pre><nowiki>
-    pre
+ <pre>
+    pre sem dado na mesma linha do space
     cd /tmp
     rm -rf bmizerany-roundup*
     curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
@@ -40,10 +40,9 @@ one can have by building insane and extensive testing:
     ./configure
     make
     sudo make install
-</nowiki></pre>
+</pre>
 
-<tt>
-    tt
+ <pre>pre2 com dado na mesma linha
     cd /tmp
     rm -rf bmizerany-roundup*
     curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
@@ -51,7 +50,7 @@ one can have by building insane and extensive testing:
     ./configure
     make
     sudo make install
-</tt>
+</pre>
 
 x
 
