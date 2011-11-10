@@ -14,6 +14,7 @@ Just pass to the script or function (depends on how you want to use it):
 h2. Usage
 
 Script:
+
 <code>
 ./get_prev_next_version.sh 2 prev 1.1.1
 1.1.0
@@ -29,6 +30,7 @@ Script:
 </code>
 
 Function:
+
 <pre>
 <code>
     source get_prev_next_version.sh
