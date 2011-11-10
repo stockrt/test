@@ -1,14 +1,16 @@
-h1. get_prev_next_version
+h2. get_prev_next_version
 
 Get previous or next version number.
 
-h1. Tests
+h2. Tests
 
 This is just testing madness.
 
 Try "roundup":http://bmizerany.github.com/roundup and see what a twisted mind
 one can have by building insane and extensive testing:
 
+<pre>
+<code>
     cd /tmp
     rm -rf bmizerany-roundup*
     curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
@@ -16,6 +18,8 @@ one can have by building insane and extensive testing:
     ./configure
     make
     sudo make install
+</code>
+</pre>
 
 h2. Author
 
