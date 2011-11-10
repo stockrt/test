@@ -1,6 +1,7 @@
 h2. Get_prev_next_version
 
 Bash script with a function to get the previous or the next version number.
+
 Just pass to the script or function (depends on how you want to use it):
 * Version number size
 ** Size is like this:
