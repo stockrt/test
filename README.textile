@@ -1,4 +1,4 @@
-h2. get_prev_next_version
+h2. Get_prev_next_version
 
 Get previous or next version number.
 
