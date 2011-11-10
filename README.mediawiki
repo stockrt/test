@@ -31,14 +31,21 @@ one can have by building insane and extensive testing:
     sudo make install
 </nowiki>
 
- <pre>
+<pre>
     pre sem dado na mesma linha do space
+
     cd /tmp
+
     rm -rf bmizerany-roundup*
+
     curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+
     cd bmizerany-roundup*
+
     ./configure
+
     make
+
     sudo make install
 </pre>
 
