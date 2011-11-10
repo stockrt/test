@@ -31,3 +31,8 @@ h2. Contributors
 
 "People":https://github.com/stockrt/test/contributors
 "People":https://github.com/stockrt/get_prev_next_version/contributors
+
+h2. License
+
+"License":https://github.com/stockrt/test/blob/master/LICENSE
+"License":https://github.com/stockrt/get_prev_next_version/blob/master/LICENSE
