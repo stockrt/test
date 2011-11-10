@@ -1,8 +1,8 @@
-h2. get_prev_next_version
+h1. get_prev_next_version
 
 Get previous or next version number.
 
-h2. Tests
+h1. Tests
 
 This is just testing madness.
 
@@ -21,13 +21,13 @@ sudo make install
 </code>
 </pre>
 
-h2. Author
+h1. Author
 
 Rogério Carvalho Schneider <stockrt@gmail.com>
 
 "http://stockrt.github.com":http://stockrt.github.com
 
-h2. Contributors
+h1. Contributors
 
 "People":https://github.com/stockrt/test/contributors
 "People":https://github.com/stockrt/get_prev_next_version/contributors
