@@ -6,8 +6,7 @@ h2. Tests
 
 This is just testing madness.
 
-Try "roundup":http://bmizerany.github.com/roundup and see what a twisted mind
-one can have by building insane and extensive testing:
+Try "roundup":http://bmizerany.github.com/roundup and see what a twisted mind one can have by building insane and extensive testing:
 
 <pre>
 <code>
@@ -34,5 +33,5 @@ h2. Contributors
 
 h2. License
 
-See "license":https://github.com/stockrt/test/blob/master/LICENSE
-See "license":https://github.com/stockrt/get_prev_next_version/blob/master/LICENSE
+See "LICENSE":https://github.com/stockrt/test/blob/master/LICENSE
+See "LICENSE":https://github.com/stockrt/get_prev_next_version/blob/master/LICENSE
