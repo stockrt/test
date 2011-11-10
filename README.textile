@@ -4,19 +4,29 @@ Bash script with a function to get the previous or the next version number.
 Just pass to the script or function (depends on how you want to use it):
 * Version number size
 ** Size is like this:
-*** 1 would be a version number like from 0.1 to 1.9
-*** 2 would be a version number like from 0.1 to 1.99
-*** 3 would be a version number like from 0.1 to 1.999
+*** 1 would be a version number like from 0.1 to 9.9
+*** 2 would be a version number like from 0.1 to 99.99
+*** 3 would be a version number like from 0.1 to 999.999
 *** You should have got the idea
 * Command (prev or next)
 * Current version number
 
 h2. Usage
 
-Script:
+Clone:
 
 <pre>
 <code>
+    git clone https://github.com/stockrt/get_prev_next_version.git
+</code>
+</pre>
+
+Using the script:
+
+<pre>
+<code>
+    cd get_prev_next_version
+
     ./get_prev_next_version.sh 2 prev 1.1.1
     1.1.0
 
@@ -31,10 +41,12 @@ Script:
 </code>
 </pre>
 
-Function:
+Using the function:
 
 <pre>
 <code>
+    cd get_prev_next_version
+
     source get_prev_next_version.sh
 
     get_prev_next_version 2 prev 1.1.1
@@ -69,6 +81,15 @@ Try "roundup":http://bmizerany.github.com/roundup and see what a twisted mind on
 </code>
 </pre>
 
+Then run the tests and see the madness:
+
+<pre>
+<code>
+    cd get_prev_next_version
+    roundup
+</code>
+</pre>
+
 h2. Author
 
 Rogério Carvalho Schneider <stockrt@gmail.com>
@@ -77,10 +98,8 @@ Rogério Carvalho Schneider <stockrt@gmail.com>
 
 h2. Contributors
 
-"People":https://github.com/stockrt/test/contributors
 "People":https://github.com/stockrt/get_prev_next_version/contributors
 
 h2. License
 
-See "LICENSE":https://github.com/stockrt/test/blob/master/LICENSE
 See "LICENSE":https://github.com/stockrt/get_prev_next_version/blob/master/LICENSE
