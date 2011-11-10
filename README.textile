@@ -1,6 +1,53 @@
 h2. Get_prev_next_version
 
-Get previous or next version number.
+Bash script with a function to get the previous or the next version number.
+Just pass to the script or function (depends on how you want to use it):
+* Version number size
+** Size is like this:
+*** 1 would be a version number like from 0.1 to 1.9
+*** 2 would be a version number like from 0.1 to 1.99
+*** 3 would be a version number like from 0.1 to 1.999
+*** You should have got the idea
+* Command (prev or next)
+* Current version number
+
+h2. Usage
+
+Script:
+<pre>
+<code>
+    ./get_prev_next_version.sh 2 prev 1.1.1
+    1.1.0
+
+    ./get_prev_next_version.sh 2 next 1.1.1
+    1.1.2
+
+    ./get_prev_next_version.sh 2 prev 1.1.0
+    1.0.99
+
+    ./get_prev_next_version.sh 2 next 1.1.99
+    1.2.0
+</code>
+</pre>
+
+Function:
+<pre>
+<code>
+    source get_prev_next_version.sh
+
+    get_prev_next_version 2 prev 1.1.1
+    1.1.0
+
+    get_prev_next_version 2 next 1.1.1
+    1.1.2
+
+    get_prev_next_version 2 prev 1.1.0
+    1.0.99
+
+    get_prev_next_version 2 next 1.1.99
+    1.2.0
+</code>
+</pre>
 
 h2. Tests
 
