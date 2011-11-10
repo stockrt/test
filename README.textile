@@ -11,13 +11,13 @@ one can have by building insane and extensive testing:
 
 <pre>
 <code>
-    cd /tmp
-    rm -rf bmizerany-roundup*
-    curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
-    cd bmizerany-roundup*
-    ./configure
-    make
-    sudo make install
+cd /tmp
+rm -rf bmizerany-roundup*
+curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
+cd bmizerany-roundup*
+./configure
+make
+sudo make install
 </code>
 </pre>
 
