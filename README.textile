@@ -1,6 +1,6 @@
 h2. Tests
 
-I am using "roundup":http://bmizerany.github.com/roundup as I feel comfortable with Shell Scripting in "Bash":http://tldp.org/LDP/abs/html
+I am using "roundup":http://bmizerany.github.com/roundup as I feel comfortable with Shell Scripting in "Bash":http://tldp.org/LDP/abs/html.
 
 Install roundup:
 
