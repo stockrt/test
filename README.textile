@@ -35,7 +35,7 @@ Rogério Carvalho Schneider <stockrt@gmail.com>
 
 h2. Contributors
 
-"People":https://github.com/stockrt/gplfy/contributors.
+See "AUTHORS":https://github.com/stockrt/gplfy/blob/master/AUTHORS and "People":https://github.com/stockrt/gplfy/contributors.
 
 h2. License
 
