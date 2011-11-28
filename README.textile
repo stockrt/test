@@ -1,16 +1,6 @@
-h2. Get_prev_next_version
+h2. Gplfy
 
-Bash script with a function to get the previous or the next version number.
-
-Just pass to the script or function (depends on how you want to use it):
-* Version number field size
-** Field size is like this:
-*** 1 would be a version number like from 0.1 to 9.9
-*** 2 would be a version number like from 0.1 to 99.99
-*** 3 would be a version number like from 0.1 to 999.999
-*** You should have got the idea
-* Command (prev or next)
-* Current version number
+Gplfy helps you to license your software under GPL according to guidance given at "GPL how-to':http://www.gnu.org/licenses/gpl-howto.html
 
 h2. Usage
 
@@ -18,64 +8,54 @@ Clone:
 
 <pre>
 <code>
-    git clone https://github.com/stockrt/get_prev_next_version.git
-    cd get_prev_next_version
+    git clone https://github.com/stockrt/gplfy.git
+    cd gplfy
 </code>
 </pre>
 
-Using the script:
+Using:
 
 <pre>
 <code>
-    ./get_prev_next_version.sh 2 prev 1.1.1
-    1.1.0
+    ./gplfy.sh
 
-    ./get_prev_next_version.sh 2 next 1.1.1
-    1.1.2
+    Usage: gplfy.sh -a <author_name> -e <author_email> -f <c|sh> [-o] [-s] <program_file> [program_name]
+        -a Author name.
+        -e Author e-mail.
+        -f Comment format.
+            c: for C code.
+            sh: for Shell script code.
+        -o Overwrite existing files.
+        -s Sublicense note.
 
-    ./get_prev_next_version.sh 2 prev 1.1.0
-    1.0.99
-
-    ./get_prev_next_version.sh 2 next 1.1.99
-    1.2.0
-</code>
-</pre>
-
-Using the function:
-
-<pre>
-<code>
-    source get_prev_next_version.sh
-
-    get_prev_next_version 2 prev 1.1.1
-    1.1.0
-
-    get_prev_next_version 2 next 1.1.1
-    1.1.2
-
-    get_prev_next_version 2 prev 1.1.0
-    1.0.99
-
-    get_prev_next_version 2 next 1.1.99
-    1.2.0
+    Examples:
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f sh mycode.sh
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f c mycode.c
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f c mycode.c "My Program"
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f c mycode.c MyProgram
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f c -o mycode.c MyProgram
+        gplfy.sh -a "Rogério Carvalho Schneider" -e stockrt@gmail.com -f c -o -s mycode.c "My Program"
 </code>
 </pre>
 
 h2. Tests
 
-This is just testing madness.
+I am using "roundup":http://bmizerany.github.com/roundup as I feel comfortable with Shell Scripting in "Bash":http://tldp.org/LDP/abs/html
 
-Try "roundup":http://bmizerany.github.com/roundup and see what a twisted mind one can have by building insane and extensive testing:
+Install roundup:
 
 <pre>
 <code>
-    cd /tmp
+    pushd /tmp
     rm -rf bmizerany-roundup*
     curl -s -L https://github.com/bmizerany/roundup/tarball/master | tar xzvf -
-    cd bmizerany-roundup*
+    pushd bmizerany-roundup*
     ./configure
     make
     sudo make install
+    popd
+    rm -rf bmizerany-roundup*
+    popd
 </code>
 </pre>
 
@@ -83,7 +63,6 @@ Then run the tests and see the madness:
 
 <pre>
 <code>
-    cd get_prev_next_version/test
     roundup
 </code>
 </pre>
@@ -96,8 +75,8 @@ Rogério Carvalho Schneider <stockrt@gmail.com>
 
 h2. Contributors
 
-"People":https://github.com/stockrt/get_prev_next_version/contributors
+"People":https://github.com/stockrt/gplfy/contributors
 
 h2. License
 
-See "LICENSE":https://github.com/stockrt/get_prev_next_version/blob/master/LICENSE
+See "LICENSE":https://github.com/stockrt/gplfy/blob/master/LICENSE
