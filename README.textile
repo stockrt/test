@@ -95,7 +95,7 @@ h2. License
 
 See "LICENSE":https://github.com/stockrt/locknload/blob/master/LICENSE
 
-h3. locknload.wav
+h2. locknload.wav
 
 Pronounced "lock and load" in honor of the great game Counter-Strike.
 
