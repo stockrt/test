@@ -1,20 +1,19 @@
 h2. Locknload
 
 Locknload helps you to wrap your commands around a lockfile to avoid process
-pile up or concurrent execution over many machines. This is mostly used on
-cron jobs.
+pile up or concurrent execution over many machines. This is mostly used on cron
+jobs.
 
 Concurrency control is made by using a dinamically defined lockfile per command.
 This lockfile can be hosted on a local or remote/shared (NFS) lockdir. When
-using NFS you can not only control if the command should or not run on the
-local machine, but you can coordinate execution of that particular command
-beetwen a set of machines.
+using NFS you can not only control if the command should or not run on the local
+machine, but you can coordinate execution of that particular command beetwen a
+set of machines.
 
 Yes, locknload does manage to use lockfiles over NFS and that works just fine
 over NFSv3. All you must to have is an NFS server that supports locking and
-lockd running in your client. Sure you have a few different modes to choose,
-and some of them does not even need the lockd or NFS server locking support to
-work.
+lockd running in your client. Sure you have a few different modes to choose, and
+some of them does not even need the lockd or NFS server locking support to work.
 
 To take advantage of lock control you need only to wrap your command around the
 locknload:
