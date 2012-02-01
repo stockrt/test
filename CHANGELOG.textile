@@ -1,4 +1,4 @@
-h2. Locknload Changelog
+h2. Locknload changelog
 
 h3. Version 0.1.0
 
