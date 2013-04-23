@@ -1,16 +1,21 @@
 h2. Nginx Push Stream latency test tool
 
-Nanosecond resolution tool for testing pub/sub delay in "nginxpushstream":https://github.com/wandenberg/nginx-push-stream-module module.
+Nanosecond resolution tool for testing pub/sub latency in "nginxpushstream":https://github.com/wandenberg/nginx-push-stream-module module.
 
-You should be running load/performance test in parallel with another tool. From
-time to time, say 10 seconds, the latency.rb tool checks the time Nginx Push
-Stream is taking to deliver one particular timestamped message. With that you
-can verify if your delivery time is according to your needs even under load.
+You should be running load/performance tests in parallel with another tool.
+From time to time, say 10 seconds, the latency.rb tool checks the time Nginx
+Push Stream is taking to deliver one particular timestamped message. With that
+you can verify if your delivery time is according to your needs even under load.
 
-I recommend testing one separate channel only for latency checks and also
-testing one shared channel with many other subscribers and publishers, not only
-the latency.rb tool, so you can stress the pipe and really check for the desired
-timely delivery you pursue.
+I recommend testing with at least two distinct profiles:
+
+- One separate channel only for latency (latency.rb tool running alone or at
+  least it's test channel not sharing any traffic with other tool than the
+  latency.rb itself). This way you can baseline the minimum latency achievable.
+
+- One shared channel with many other subscribers and publishers (not only the
+  latency.rb tool alone). This way you can stress the pipe and really check for
+  the desired timely delivery you pursue in a more realistic way.
 
 h2. Using
 
