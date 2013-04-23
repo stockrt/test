@@ -19,7 +19,7 @@ Examples:
 
 Options:
 
-    -c, --channel       Channel.
+    -c, --channel       Channel name.
     -d, --pubdelay      Publisher delay (in seconds) between messages.
     -o, --outfile       Output file (write the last latency timming to use in any external tool).
     -p, --pub           Pub URI.
