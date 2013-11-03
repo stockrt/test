@@ -1,7 +1,56 @@
-h2. queue.h
+# Rodando o projeto Registry em uma VM
 
-Revised BSD's queue.h.
+Para instalar e rodar o projeto você vai precisar de uma VM Ubuntu.
+Com o Vagrant a instalação e configuração do projeto na VM fica bem simples.
 
-Include samples on how to use data structures such as linked lists and tail queues provided by this nice Unix API called queue.h.
+- Primeiro instale o Virtualbox e o Vagrant em sua máquina:
+    https://www.virtualbox.org
+    http://www.vagrantup.com
 
-Kudos to the Berkeley University guys that originally wrote this header file back in the day, from behind the trenches.
+- Depois, no diretório raiz do projeto, digite:
+    vagrant up
+
+Pronto, em alguns minutos a VM deverá estar rodando com o projeto instalado.
+
+- O Vagrant permite destruir e recriar facilmente uma máquina virtual.
+Ao ser recriada, a VM será totalmente reconfigurada:
+    vagrant status
+    vagrant destroy
+    vagrant up
+    vagrant reload
+    vagrant provision
+
+* NOTA: A VM se destina à execução do código, e não ao processo de edição/desenvolvimento. Portanto, não edite arquivos pela VM, usa ela apenas como servidor headless (sem interface gráfica) para rodar o Gateway, o Core Server e o Web Server.
+Use a pasta /vagrant na VM como ponto de troca de arquivos entre o host e a VM. A raiz do repositório é o diretório local (host) e o /vagrant é o diretório remoto (VM).
+
+Para acessar a VM:
+    vagrant ssh
+
+Use os aliases para rodar o projeto:
+    gateway
+    registry-server-dev
+    registry-server
+    registry-client
+
+A interface Registry Web Console ficará acessível em:
+    http://registry.vm
+    ou
+    http://10.10.10.10
+
+# Explorando o projeto Registry no Eclipse
+
+Para utilizar o repositório no Eclipse e contribuir com o Registry você precisará rodar um script com o Play Framework que irá preparar o diretório Registry para ser usado como workspace no Eclipse.
+
+- Entre no diretório de script e rode o eclipsify:
+    cd script
+    ./eclipsify.sh
+
+- Caso precise instalar o Java, utilize:
+    sudo script/java-dl.sh
+
+A variável de ambiente JAVA_HOME deve estar exportada para um Java versão 7.
+A variável de ambiente PATH deve dar preferência de load para $JAVA_HOME/bin:$PATH para que os comandos java e javac executem a versão 7.
+    export JAVA_HOME="/opt/java"
+    export PATH="$JAVA_HOME/bin:$PATH"
+
+Recomenda-se importar para o workspace sem copiar, assim os updates com git pull ficam disponíveis de imediato no ambiente do Eclipse.
