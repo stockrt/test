@@ -1,4 +1,5 @@
 h2(#service). Serviço Registry para o SDDL
+
 Registry é um serviço para o "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer parte do projeto "ContextNet":http://lac-rio.com/projects/contextnet da PUC-Rio.
 
 Veja "Registry":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=registry na página principal do serviço para mais detalhes.
@@ -12,6 +13,7 @@ Com o Vagrant a instalação e configuração do serviço na VM fica bem simples
 # Primeiro instale o "Virtualbox":https://www.virtualbox.org e o "Vagrant":http://www.vagrantup.com em sua máquina.
 
 # Depois, no diretório raiz do clone do git, digite:
+
 <pre>
 <code>
     vagrant up
@@ -21,7 +23,9 @@ Com o Vagrant a instalação e configuração do serviço na VM fica bem simples
 Pronto, em alguns minutos a VM deverá estar rodando com o serviço instalado.
 
 # O Vagrant permite destruir e recriar facilmente uma máquina virtual.
+
 Ao ser recriada, a VM será totalmente reconfigurada:
+
 <pre>
 <code>
     vagrant status
@@ -36,6 +40,7 @@ Ao ser recriada, a VM será totalmente reconfigurada:
 Use a pasta /vagrant na VM como ponto de troca de arquivos entre o host e a VM. A raiz do repositório é o diretório local (host) e o /vagrant é o diretório remoto (VM).
 
 h3(#accessing). Para acessar a VM:
+
 <pre>
 <code>
     vagrant ssh
@@ -43,6 +48,7 @@ h3(#accessing). Para acessar a VM:
 </pre>
 
 h3(#aliases). Use os aliases para rodar o serviço:
+
 <pre>
 <code>
     gateway
@@ -53,6 +59,7 @@ h3(#aliases). Use os aliases para rodar o serviço:
 </pre>
 
 h3(#webconsole). A interface Registry Web Console ficará acessível em:
+
 <pre>
 <code>
     http://registry.vm
@@ -66,6 +73,7 @@ h2(#exploring). Explorando o serviço Registry no Eclipse
 Para utilizar o repositório no Eclipse e contribuir com o Registry você precisará rodar um script com o Play Framework que irá preparar o diretório Registry para ser usado como workspace no Eclipse.
 
 # Entre no diretório de script e rode o eclipsify:
+
 <pre>
 <code>
     cd script
@@ -74,6 +82,7 @@ Para utilizar o repositório no Eclipse e contribuir com o Registry você precis
 </pre>
 
 # Caso precise instalar o Java, utilize:
+
 <pre>
 <code>
     sudo script/java-dl.sh
@@ -81,7 +90,9 @@ Para utilizar o repositório no Eclipse e contribuir com o Registry você precis
 </pre>
 
 A variável de ambiente JAVA_HOME deve estar exportada para um Java versão 7.
+
 A variável de ambiente PATH deve dar preferência de load para $JAVA_HOME/bin:$PATH para que os comandos java e javac executem a versão 7.
+
 <pre>
 <code>
     export JAVA_HOME="/opt/java"
