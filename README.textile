@@ -24,7 +24,6 @@ Pronto, em alguns minutos a VM deverá estar rodando com o serviço instalado.
 
 Ao ser recriada, a VM será totalmente reconfigurada:
 
-<pre>
 <code>
     vagrant status
     vagrant destroy
@@ -32,7 +31,6 @@ Ao ser recriada, a VM será totalmente reconfigurada:
     vagrant reload
     vagrant provision
 </code>
-</pre>
 
 * NOTA: A VM se destina à execução do código, e não ao processo de edição/desenvolvimento. Portanto, não edite arquivos pela VM, usa ela apenas como servidor headless (sem interface gráfica) para rodar o Gateway, o Core Server e o Web Server.
 Use a pasta /vagrant na VM como ponto de troca de arquivos entre o host e a VM. A raiz do repositório é o diretório local (host) e o /vagrant é o diretório remoto (VM).
