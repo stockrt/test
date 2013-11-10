@@ -1,22 +1,21 @@
-h2(#service). Serviço Registry para o SDDL
+h2(#game). Invisible Battlefields Game
 
-*Registry* é um serviço para o "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer parte do projeto "ContextNet":http://lac-rio.com/projects/contextnet da *PUC-Rio*.
-Na página "Classes":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=classes, com a lista completa de serviços adicionais, veja a página principal do serviço "Registry":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=registry para mais detalhes.
+This game uses the "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer software, part of the "ContextNet":http://lac-rio.com/projects/contextnet project from PUC-Rio.
 
-h2(#running). Rodando o Registry em uma VM
+h2(#running). Running the VM for server-side services
 
-Para instalar e rodar o serviço você vai precisar de uma *VM Ubuntu*.
-Com o *Vagrant* a instalação e configuração do serviço na VM fica bem simples.
-- Primeiro instale o "Virtualbox":https://www.virtualbox.org e o "Vagrant":http://www.vagrantup.com em sua máquina.
-- Depois, no diretório raiz do clone do git, digite:
+To install and run the servers for this game you will need an Ubuntu VM.
+Doing this with Vagrant the installation can be pretty easy.
+- First, install "Virtualbox":https://www.virtualbox.org and "Vagrant":http://www.vagrantup.com in your machine.
+- Second, at the git clone directory, type:
 
 <pre>
     vagrant up
 </pre>
 
-Pronto, em alguns minutos a VM deverá estar rodando com o serviço instalado.
-- O Vagrant permite destruir e recriar facilmente uma máquina virtual.
-Ao ser recriada, a VM será totalmente reconfigurada:
+Ready, in a few minutes the VM should be running with all services installed.
+- Vagrant allows you to easily destroy and recreate a VM.
+When recreated, the VM will be totally reconfigured:
 
 <pre>
     vagrant status
@@ -26,57 +25,56 @@ Ao ser recriada, a VM será totalmente reconfigurada:
     vagrant provision
 </pre>
 
-* Nota: A VM se destina à execução do código, e não ao processo de edição/desenvolvimento. Portanto, não edite arquivos pela VM, usa ela apenas como *servidor headless* (sem interface gráfica) para rodar o *Gateway*, o *Core Server* e o *Web Server*.
-Use a pasta */vagrant na VM* como ponto de troca de arquivos entre o host e a VM. A *raiz do repositório git* é o diretório local (host) e o */vagrant* é o diretório remoto (VM).
+* Note: This VM is designated to code execution, not to the development process. So, do not edit any files through the VM, use it only as a headless server (no GUI) to run the Gateway, Core Server and Web Server.
+As a shared directory for files exchange between the host and the VM remember that the git clone directory is mapped to the VM /vagrant directory. The *git clone root directory* is the local directory (host) and the */vagrant* is the remote directory (VM).
 
-- Para acessar a VM:
+- Accessing the VM:
 
 <pre>
     vagrant ssh
 </pre>
 
-- Use os aliases para rodar o serviço:
+- Using the aliases to run the services:
 
 <pre>
     gateway
     registry-server-dev
     registry-server
-    registry-client
 </pre>
 
-- A interface Registry Web Console ficará acessível em:
+- The Registry Web Console interface will be acessible at:
 
 <pre>
     http://registry.vm
-    ou
+    or
     http://10.10.10.10
 </pre>
 
-h2(#exploring). Explorando o serviço Registry no Eclipse
+h2(#exploring). Exploring the source code with Eclipse
 
-Para utilizar o repositório no Eclipse e contribuir com o Registry você precisará rodar um script com o "Play Framework":http://www.playframework.com que irá preparar o diretório Registry para ser usado como *workspace no Eclipse*.
-- Entre no diretório de script e rode o eclipsify:
+To contribute with this project and edit/visualize the source code in Eclipse you will need to run a script with the "Play Framework":http://www.playframework.com that will prepare the git clone directory to be used in the Eclipse workspace.
+- Inside the directory script, run eclipsify:
 
 <pre>
     cd script
     ./eclipsify.sh
 </pre>
 
-- Caso precise instalar o *Java*, utilize:
+- If you need to install Java:
 
 <pre>
     sudo script/java-dl.sh
 </pre>
 
-A variável de ambiente JAVA_HOME deve estar exportada para um Java versão 7.
-A variável de ambiente PATH deve dar preferência de load para $JAVA_HOME/bin:$PATH para que os comandos *java* e *javac* executem a versão 7.
+The JAVA_HOME environment variable must be exported to Java version 7.
+The PATH environment variable must give preference in load order to $JAVA_HOME/bin:$PATH so that the *java* and *javac* commands are version 7:
 
 <pre>
     export JAVA_HOME="/opt/java"
     export PATH="$JAVA_HOME/bin:$PATH"
 </pre>
 
-Recomenda-se importar para o workspace *sem copiar*, assim os updates com git pull ficam disponíveis de imediato no ambiente do Eclipse.
+It is recommended that when importing the project to workspace you do not copy (do not check the copy option) so any updates from git can reflect immediately to your Eclipse environment.
 
 h2(#contributors). Contributors
 
