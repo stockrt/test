@@ -34,13 +34,13 @@ Ao ser recriada, a VM será totalmente reconfigurada:
 * NOTA: A VM se destina à execução do código, e não ao processo de edição/desenvolvimento. Portanto, não edite arquivos pela VM, usa ela apenas como servidor headless (sem interface gráfica) para rodar o Gateway, o Core Server e o Web Server.
 Use a pasta /vagrant na VM como ponto de troca de arquivos entre o host e a VM. A raiz do repositório é o diretório local (host) e o /vagrant é o diretório remoto (VM).
 
-h3(#accessing). Para acessar a VM:
+- Para acessar a VM:
 
 <pre>
     vagrant ssh
 </pre>
 
-h3(#aliases). Use os aliases para rodar o serviço:
+- Use os aliases para rodar o serviço:
 
 <pre>
     gateway
@@ -49,7 +49,7 @@ h3(#aliases). Use os aliases para rodar o serviço:
     registry-client
 </pre>
 
-h3(#webconsole). A interface Registry Web Console ficará acessível em:
+- A interface Registry Web Console ficará acessível em:
 
 <pre>
     http://registry.vm
