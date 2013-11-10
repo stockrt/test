@@ -9,6 +9,7 @@ Para instalar e rodar o serviço você vai precisar de uma VM Ubuntu.
 Com o Vagrant a instalação e configuração do serviço na VM fica bem simples.
 - Primeiro instale o "Virtualbox":https://www.virtualbox.org e o "Vagrant":http://www.vagrantup.com em sua máquina.
 - Depois, no diretório raiz do clone do git, digite:
+
 <pre>
     vagrant up
 </pre>
