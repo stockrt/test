@@ -1,7 +1,8 @@
 h2(#service). Serviço Registry para o SDDL
 
 Registry é um serviço para o "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer parte do projeto "ContextNet":http://lac-rio.com/projects/contextnet da PUC-Rio.
-Veja "Registry":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=registry na página principal do serviço para mais detalhes.
+Veja "Registry":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=registry na página principal
+do serviço para mais detalhes.
 Veja "Classes":http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=classes para os demais serviços.
 
 h2(#running). Rodando o Registry em uma VM
