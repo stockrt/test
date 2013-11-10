@@ -15,9 +15,7 @@ Com o Vagrant a instalação e configuração do serviço na VM fica bem simples
 # Depois, no diretório raiz do clone do git, digite:
 
 <pre>
-<code>
     vagrant up
-</code>
 </pre>
 
 Pronto, em alguns minutos a VM deverá estar rodando com o serviço instalado.
@@ -102,7 +100,7 @@ A variável de ambiente PATH deve dar preferência de load para $JAVA_HOME/bin:$
 
 Recomenda-se importar para o workspace sem copiar, assim os updates com git pull ficam disponíveis de imediato no ambiente do Eclipse.
 
-h2(#people). People
+h2(#contributors). Contributors
 
 "People":https://github.com/stockrt/registry/contributors
 
