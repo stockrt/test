@@ -1,6 +1,6 @@
 h2(#game). Invisible Battlefields Game
 
-*Invisible Battlefields Game* uses the "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer software, part of the "ContextNet":http://lac-rio.com/projects/contextnet project from *PUC-Rio*.
+*Invisible Battlefields* game uses the "SDDL":http://lac-rio.com/software/contextnetsddl-scalable-data-distribution-layer software, part of the "ContextNet":http://lac-rio.com/projects/contextnet project from *PUC-Rio*.
 
 h2(#running). Running the VM for server-side services
 
