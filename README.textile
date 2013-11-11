@@ -13,7 +13,7 @@ Doing this with *Vagrant* the installation can be pretty easy.
     vagrant up
 </pre>
 
-Ready, in a few minutes the VM should be running with all services installed.
+Done, in a few minutes the VM should be running with all services installed.
 - Vagrant allows you to easily destroy and recreate a VM.
 When recreated, the VM will be totally reconfigured:
 
@@ -25,7 +25,7 @@ When recreated, the VM will be totally reconfigured:
     vagrant provision
 </pre>
 
-* Note: This VM is designated to *code execution*, not to the development process. So, do not edit any files through the VM, use it only as a *headless server* (no GUI) to run the *Gateway*, *Core Server* and *Web Server*.
+* Note: This VM is designated to *code execution* only, not to the development process. So, do not edit any files through the VM, use it only as a *headless server* (no GUI) to run the *Gateway*, *Core Server* and *Web Server*.
 As a shared directory for files exchange between the host and the VM remember that the git clone directory is mapped to the VM /vagrant directory. The *git clone root directory* is the local directory (host) and the */vagrant* is the remote directory (VM).
 
 - Accessing the VM:
@@ -79,7 +79,7 @@ It is recommended that when importing the project to workspace you *do not copy*
 h2(#contributors). Contributors
 
 "People":https://github.com/stockrt/registry/contributors
-* Rogério Carvalho Schneider <rschneider@inf.puc-rio.br>
 * André Mac Dowell <adowell@inf.puc-rio.br>
 * Ivan Xavier Araújo de Lima <ilima@inf.puc-rio.br>
+* Rogério Carvalho Schneider <rschneider@inf.puc-rio.br>
 * Markus Endler <endler@inf.puc-rio.br>
