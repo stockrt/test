@@ -1,5 +1,6 @@
 # luarpc - RPC library in Lua
 
+
 ## Using in interactive shell
 
 ### Server
@@ -41,6 +42,9 @@ proxy2 = luarpc.createProxy(server_address, server_port2, interface_file)
 ```shell
 ./rpc_client_ok.lua interface.lua localhost 8080 8081
 ```
+
+
+## Using during benchmark
 
 For performance tests you should use the less verbose mode of server and client.
 Change verbose to false in luarpc.lua or run the suggested commands bellow.
