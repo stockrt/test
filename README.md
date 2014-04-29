@@ -47,8 +47,11 @@ proxy2 = luarpc.createProxy(server_address, server_port2, interface_file)
 ## Using during benchmark
 
 For performance tests you should use the less verbose mode of server and client.
-Change verbose to false in luarpc.lua or run the suggested commands bellow.
+
+Change **verbose to false in luarpc.lua** or run the suggested commands bellow.
+
 Redirecting console output to /dev/null has almost the same effect in throughput as changing the flag to false.
+
 Prefer changing the flag to false.
 
 ### Silent Server (verbose = false)
