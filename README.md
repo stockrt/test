@@ -1,4 +1,4 @@
-```ruby
+```python
 -- luarpc server loop
 local server_accept_ready_list, _, err = socket.select({servant.server}, nil, 0)
   for _, server in pairs(server_accept_ready_list) do
