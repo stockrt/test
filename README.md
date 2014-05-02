@@ -10,4 +10,16 @@ local server_accept_ready_list, _, err = socket.select({servant.server}, nil, 0)
     end
   end
 end
+
+-- servers
+for server in server_num -- multi servant
+  servers += server:bind() -- one port per server
+-- loop forever
+for server in select(servers) -- check for client arrival activity
+  client_pool += server:accept() -- pop client from kernel backlog, one at a time
+  for client in select(client_pool) -- check for client request activity
+    client:receive() -- protocol dialog for each client, one at a time
+    client:send()
+    ...
+
 ```
