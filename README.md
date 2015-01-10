@@ -2,26 +2,36 @@
 
 ## Update SQLite version if needed
 
-* No download is necessary, Makefile will take care of that for you.
+* No download is necessary, Makefile will take care of that for you. Use the
+  download link only to choose any `sqlite-amalgamation` version number.
 
 http://www.sqlite.org/download.html
 
+* Update Makefile with desired SQLite version.
+
 ```bash
+  vi Makefile
+
+  ...
   SQLITE_VERSION ?= 3080704
+  ...
 ```
 
 ## Build dependency
 
-* Get Android NDK and configure your environment so the command `ndk-build` can be found in the PATH.
+* Get Android NDK and configure your environment so the command `ndk-build` can be found in the PATH. This is necessary to cross-compile and build native code applications for Android.
 
 https://developer.android.com/tools/sdk/ndk/index.html
 
-## Usage
+## Build
+
+* Make the CLI and Shared Lib.
 
 ```bash
   make clean
   make
 
+  * Expected output
   [armeabi] Compile thumb  : sqlite3-cli <= shell.c
   [armeabi] Compile thumb  : sqlite3-cli <= sqlite3.c
   [armeabi] Compile thumb  : sqlite3 <= sqlite3.c
@@ -39,3 +49,13 @@ libs/armeabi/sqlite3
 * Statically linked shared library
 
 obj/local/armeabi/libsqlite3.a
+
+* You may now push SQLite to your Android device
+
+```bash
+  adb push libs/armeabi/sqlite3 /sdcard/
+  adb shell
+  cp /sdcard/sqlite3 /data/local/
+  chmod 755 /data/local/sqlite3
+  /data/local/sqlite3 -help
+```
