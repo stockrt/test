@@ -56,7 +56,9 @@ https://developer.android.com/tools/sdk/ndk/index.html
   obj/local/armeabi/libsqlite3.a
 ```
 
-* You may now push SQLite to your Android device
+* You may now push SQLite CLI to your Android device
+
+Note that paths and permissions may vary in your Android device and environment.
 
 ```bash
   adb push libs/armeabi/sqlite3 /sdcard/
