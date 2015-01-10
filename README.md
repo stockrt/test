@@ -58,8 +58,6 @@ https://developer.android.com/tools/sdk/ndk/index.html
 
 * You may now push SQLite CLI to your Android device
 
-Note that paths and permissions may vary in your Android device and environment.
-
 ```bash
   adb push libs/armeabi/sqlite3 /sdcard/
   adb shell
@@ -68,3 +66,7 @@ Note that paths and permissions may vary in your Android device and environment.
   chmod 755 /data/local/sqlite3
   /data/local/sqlite3 -help
 ```
+
+Note that paths and permissions may vary in your Android device and environment.
+
+Happy hacking.
