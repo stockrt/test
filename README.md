@@ -1,33 +1,41 @@
-# SQLite build scripts for Android #
+# SQLite build scripts for Android
 
-## Get your SQLite version and update Makefile if needed ##
+## Update SQLite version if needed
+
+* No download is necessary, Makefile will take care of that for you.
 
 http://www.sqlite.org/download.html
 
-  SQLITE_VERSION  ?= 3080704
+```bash
+  SQLITE_VERSION ?= 3080704
+```
 
-## Build dependency ##
+## Build dependency
 
-Android NDK
+* Get Android NDK and configure your environment so the command `ndk-build` can be found in the PATH.
 
 https://developer.android.com/tools/sdk/ndk/index.html
 
-## Usage ##
+## Usage
 
+```bash
   make clean
   make
 
-[armeabi] Compile thumb  : sqlite3-cli <= shell.c
-[armeabi] Compile thumb  : sqlite3-cli <= sqlite3.c
-[armeabi] Compile thumb  : sqlite3 <= sqlite3.c
-[armeabi] StaticLibrary  : libsqlite3.a
-[armeabi] Executable     : sqlite3
-[armeabi] Install        : sqlite3 => libs/armeabi/sqlite3
+  [armeabi] Compile thumb  : sqlite3-cli <= shell.c
+  [armeabi] Compile thumb  : sqlite3-cli <= sqlite3.c
+  [armeabi] Compile thumb  : sqlite3 <= sqlite3.c
+  [armeabi] StaticLibrary  : libsqlite3.a
+  [armeabi] Executable     : sqlite3
+  [armeabi] Install        : sqlite3 => libs/armeabi/sqlite3
+```
 
-## Artifacts ##
+## Artifacts
 
-- CLI
+* CLI
+
 libs/armeabi/sqlite3
 
-- Statically linked shared library
+* Statically linked shared library
+
 obj/local/armeabi/libsqlite3.a
