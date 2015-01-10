@@ -17,9 +17,11 @@ http://www.sqlite.org/download.html
   ...
 ```
 
-## Build dependency
+## Configure your environment
 
-* Get Android NDK and configure your environment so the command `ndk-build` can be found in the PATH. This is necessary to cross-compile and build native code applications for Android.
+* Get Android NDK and configure your environment so the command `ndk-build`
+  can be found in the PATH. This is a build dependency and is necessary to
+  cross-compile and build Native Code Applications for Android.
 
 https://developer.android.com/tools/sdk/ndk/index.html
 
@@ -44,11 +46,15 @@ https://developer.android.com/tools/sdk/ndk/index.html
 
 * CLI
 
-libs/armeabi/sqlite3
+```bash
+  libs/armeabi/sqlite3
+```
 
 * Statically linked shared library
 
-obj/local/armeabi/libsqlite3.a
+```bash
+  obj/local/armeabi/libsqlite3.a
+```
 
 * You may now push SQLite to your Android device
 
@@ -56,6 +62,7 @@ obj/local/armeabi/libsqlite3.a
   adb push libs/armeabi/sqlite3 /sdcard/
   adb shell
   cp /sdcard/sqlite3 /data/local/
+  rm -f /sdcard/sqlite3
   chmod 755 /data/local/sqlite3
   /data/local/sqlite3 -help
 ```
