@@ -1,7 +1,33 @@
-# EXT-PubTrans #
+# SQLite build scripts for Android #
 
-Integração com SPTrans e outras APIs com dados de transporte público das cidades.
+## Get your SQLite version and update Makefile if needed ##
 
-### Documentação ###
+http://www.sqlite.org/download.html
 
-* [SPTrans - API Olho Vivo](http://www.lac.inf.puc-rio.br/dokuwiki/doku.php?id=sptrans)
+  SQLITE_VERSION  ?= 3080704
+
+## Build dependency ##
+
+Android NDK
+
+https://developer.android.com/tools/sdk/ndk/index.html
+
+## Usage ##
+
+  make clean
+  make
+
+[armeabi] Compile thumb  : sqlite3-cli <= shell.c
+[armeabi] Compile thumb  : sqlite3-cli <= sqlite3.c
+[armeabi] Compile thumb  : sqlite3 <= sqlite3.c
+[armeabi] StaticLibrary  : libsqlite3.a
+[armeabi] Executable     : sqlite3
+[armeabi] Install        : sqlite3 => libs/armeabi/sqlite3
+
+## Artifacts ##
+
+- CLI
+libs/armeabi/sqlite3
+
+- Statically linked shared library
+obj/local/armeabi/libsqlite3.a
