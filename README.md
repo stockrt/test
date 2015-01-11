@@ -18,18 +18,18 @@ This build scripts generate the following SQLite artifacts for Android:
 
 * Get Android NDK and configure your environment so the command `ndk-build`
   can be found in the PATH. This is a build dependency and is necessary to
-  cross-compile and build Android Native Code Applications.
+  cross-compile and build Android Native Code Applications:
 
 https://developer.android.com/tools/sdk/ndk/index.html
 
 ## Update SQLite version if needed
 
 * No download is necessary, Makefile will take care of that for you. Use the
-  download link only to choose any `sqlite-amalgamation` version number.
+  download link only to choose any `sqlite-amalgamation` version number:
 
 http://www.sqlite.org/download.html
 
-* Update Makefile with desired SQLite version.
+* Update Makefile with desired SQLite version
 
 ```bash
   vi Makefile
