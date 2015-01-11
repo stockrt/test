@@ -3,16 +3,16 @@
 This build scripts generate the following SQLite artifacts for Android:
 
 * Statically Linked CLI
-  ** sqlite3-static
+  * sqlite3-static
 
 * Static Library
-  ** libsqlite3.a
+  * libsqlite3.a
 
 * Dynamically Linked CLI
-  ** sqlite3-dynamic
+  * sqlite3-dynamic
 
 * Dynamically Linked Shared Object Library
-  ** libsqlite3.so
+  * libsqlite3.so
 
 ## Configure your environment
 
