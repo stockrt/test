@@ -49,6 +49,13 @@ http://www.sqlite.org/download.html
 
   * Expected output
 
+  [armeabi] Compile thumb  : sqlite3-static-cli <= shell.c
+  [armeabi] Compile thumb  : sqlite3-static-cli <= sqlite3.c
+  [armeabi] Compile thumb  : sqlite3-a <= sqlite3.c
+  [armeabi] StaticLibrary  : libsqlite3.a
+  [armeabi] Executable     : sqlite3-static
+  [armeabi] Install        : sqlite3-static => libs/armeabi/sqlite3-static
+
   [armeabi] Compile thumb  : sqlite3-dynamic-cli <= shell.c
   [armeabi] Compile thumb  : sqlite3-dynamic-cli <= sqlite3.c
   [armeabi] Compile thumb  : sqlite3-so <= sqlite3.c
@@ -56,13 +63,6 @@ http://www.sqlite.org/download.html
   [armeabi] Executable     : sqlite3-dynamic
   [armeabi] Install        : sqlite3-dynamic => libs/armeabi/sqlite3-dynamic
   [armeabi] Install        : libsqlite3.so => libs/armeabi/libsqlite3.so
-
-  [armeabi] Compile thumb  : sqlite3-static-cli <= shell.c
-  [armeabi] Compile thumb  : sqlite3-static-cli <= sqlite3.c
-  [armeabi] Compile thumb  : sqlite3-a <= sqlite3.c
-  [armeabi] StaticLibrary  : libsqlite3.a
-  [armeabi] Executable     : sqlite3-static
-  [armeabi] Install        : sqlite3-static => libs/armeabi/sqlite3-static
 ```
 
 ## Artifacts
@@ -93,4 +93,4 @@ http://www.sqlite.org/download.html
 
 Note that paths and permissions may vary in your Android device or environment.
 
-Happy hacking.
+Happy hacking!
